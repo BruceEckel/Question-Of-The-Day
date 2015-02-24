@@ -8,6 +8,10 @@ Getting Started with Python on Heroku
 =====================================
 (Adapted from [https://github.com/jamesward/hello-python-flask](https://github.com/jamesward/hello-python-flask))
 
+First, make sure you have the latest version of **pip**:
+
+		python -m pip install -U pip
+
 Run Locally
 -----------
 

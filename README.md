@@ -17,7 +17,13 @@ Run Locally
 
 2. Activate virtualenv:
 
-        source venv/bin/activate
+    Mac/Linux:
+
+		source venv/bin/activate
+
+	Windows:
+
+        venv\Scripts\activate.bat
 
 3. Get the deps:
 

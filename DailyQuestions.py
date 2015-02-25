@@ -1,6 +1,8 @@
-[
-("What Achievement Have You Accomplished That Has Now Lost It’s Luster?", " How Has Life Exceeded Your Expectations?"),
-("What Would You Like To Be Forgiven For?", "What Do You Love About Yourself?"),
+# -*- coding: utf-8 -*-
+QUESTIONS = [
+("Is this the first question?", "Is This the second question?"),
+("What Achievement Have You Accomplished That Has Now Lost It’s Luster?", "How Has Life Exceeded Your Expectations?"),
+("What Would You Like To Be Forgiven For?", "What Do You Love About Yourself?"), 
 ("Who Or What Are You Blaming?", "Who Has Made A Difference In Your Life?"),
 ("What Do You Say You Don’t Have Time For?", "What Have You Been Learning Lately?"),
 ("Who Or What Have You Been Avoiding?", "What Can People Count On You For?"),
@@ -20,4 +22,4 @@
 ("What Do You Have A Hard Time Admitting?", " What Are You Proud Of?"),
 ("What About Your Life Isn’t Going As Planned?", "What Energizes You?"),
 ("What's Bothering You?", " What Are You Grateful For?"),
-}
+]

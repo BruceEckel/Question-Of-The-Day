@@ -71,4 +71,5 @@ Log onto Heroku.com, then follow the instructions to connect to your github repo
 Notes
 -------------
 * When you change **main.py**, Flask's automatic refresh doesn't work. You have to kill it and restart it to see the results. The refresh only seems to work on templates.
+* On Android, open the url https://question-of-the-day.herokuapp.com/ in your browser, then from the browser menu choose "Add to home screen." This will add an icon for the app to your device home screen.
 

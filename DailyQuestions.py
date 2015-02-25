@@ -1,9 +1,11 @@
 # -*- coding: utf-8 -*-
+import datetime
+
 QUESTIONS = [
 ("What Would You Like To Be Forgiven For?", "What Do You Love About Yourself?"), 
 ("What Achievement Have You Accomplished That Has Now Lost Its Luster?", "How Has Life Exceeded Your Expectations?"),
 ("Who Or What Are You Blaming?", "Who Has Made A Difference In Your Life?"),
-("What Do You Say You Don’t Have Time For?", "What Have You Been Learning Lately?"),
+("What Do You Say You Don't Have Time For?", "What Have You Been Learning Lately?"),
 ("Who Or What Have You Been Avoiding?", "What Can People Count On You For?"),
 ("Where Have You Broken Your Word?", " What Would You Like To Be Acknowledged For?"),
 ("What Do You Keep Putting Off For Another Day?", "What Do You Love About The Work You Do?"),
@@ -22,3 +24,8 @@ QUESTIONS = [
 ("What About Your Life Isn’t Going As Planned?", "What Energizes You?"),
 ("What's Bothering You?", " What Are You Grateful For?"),
 ]
+
+def todaysQuestion():
+	today = datetime.date.today()
+	question = QUESTIONS[today.toordinal() % len(QUESTIONS)]
+	return dict(first_question=question[0], second_question=question[1])

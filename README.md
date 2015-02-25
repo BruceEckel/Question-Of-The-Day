@@ -12,6 +12,14 @@ First, make sure you have the latest version of **pip**:
 
 		python -m pip install -U pip
 
+Next, make sure you have virtualenv installed:
+
+		virtualenv --version
+
+If this gives you an error message, run:
+
+		pip install virtualenv
+
 Run Locally
 -----------
 
@@ -48,7 +56,7 @@ Run on Heroku
 1. Create the app
 
         heroku create -s cedar
-
+ 
 2. Deploy the app
 
         git push heroku master
@@ -58,4 +66,9 @@ Run on Heroku
         heroku open
 
 ### Nicer alternative: ###
-Log onto Heroku.com, then follow the instructions to connect to your github repository and launch your app.
+Log onto Heroku.com, then follow the instructions to connect to your github repository and launch your app. This can include auto-deployment every time you update your Github repository!
+
+Notes
+-------------
+* When you add routes, Flask's automatic refresh doesn't work. You have to kill it and restart it to see the results.
+

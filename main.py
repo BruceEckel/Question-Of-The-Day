@@ -11,8 +11,16 @@ app = create_app()
 
 @app.route("/")
 def index():
-    #return "<h1>hello, world</h1>"
     return render_template('index.html')
+
+@app.route("/first_question")
+def first_question():
+    return "<h1>Here's the first question</h1>"
+
+@app.route("/go")
+def go():
+    return "Go"
+
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))

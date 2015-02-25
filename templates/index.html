@@ -1,12 +1,46 @@
 {% extends "bootstrap/base.html" %}
-{% block title %}This is an example page{% endblock %}
+
+{% block title %}Question of the Day{% endblock %}
+
+{% block styles %}
+{{super()}}
+<style type="text/css">body{padding-top: 50px;}</style>
+{% endblock %}
 
 {% block navbar %}
-<div class="navbar navbar-fixed-top">
-  <!-- ... -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Some stuff for the navbar</a>
+    </div>
+  </div>
+
 </div>
 {% endblock %}
 
 {% block content %}
-  <h1>Hello, Bootstrap</h1>
+<div class="container">
+  <h1>Question of the Day</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sit amet enim iaculis, pretium felis in, auctor ipsum. Nam malesuada lorem in porta aliquam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla facilisi. Donec ultricies tempor quam sit amet condimentum. Praesent sit amet eros ante. Proin condimentum purus a massa porta convallis. Vivamus nec dictum sapien. Phasellus quis metus congue magna imperdiet facilisis. Suspendisse lacinia sed lectus vitae eleifend. Aenean vitae porta ligula. Donec a eros odio.
+
+<p>Aenean metus lacus, dictum sed nisi id, rutrum scelerisque quam. Sed quam lectus, ullamcorper at fermentum pellentesque, cursus in ligula. Nulla rutrum sed sapien vitae mollis. Vivamus tempus sem vitae neque iaculis convallis. Nulla tristique nibh sed dolor scelerisque suscipit. Vivamus quis pharetra enim, et bibendum purus. Sed semper mauris ligula, ut tempus nulla faucibus id.
+
+<p>Morbi sit amet urna posuere odio posuere mattis. Sed gravida ante nisi, ut aliquet dolor laoreet et. Ut aliquet dui nec pellentesque pharetra. Donec hendrerit ligula venenatis, varius mauris sed, rutrum libero. Nullam pretium ipsum sit amet eros tincidunt lacinia. Donec lectus erat, pulvinar vel mauris sed, sollicitudin interdum lacus. Nulla et nisi at ante feugiat tristique vitae sit amet purus. Donec felis risus, bibendum id lorem a, rutrum blandit felis. Vestibulum aliquam sollicitudin arcu, eget dapibus libero suscipit vitae. Fusce sed sem rutrum, suscipit est vitae, maximus mi. Mauris faucibus dignissim metus id hendrerit. Cras fringilla lorem sit amet tempus cursus. Aliquam bibendum libero et urna varius, in pretium dolor iaculis. In accumsan, leo ut gravida suscipit, libero nibh euismod erat, quis posuere odio metus eget magna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras et tortor ut nunc auctor posuere.
+
+<p>Ut vehicula odio sed ornare tristique. Nunc neque ex, commodo sit amet accumsan gravida, finibus a quam. Maecenas tempor non ligula quis aliquam. Suspendisse et augue volutpat, maximus nibh quis, maximus nunc. Sed iaculis ipsum interdum elit lobortis malesuada. Donec aliquet tempus metus, at sodales mauris ullamcorper sit amet. Donec sapien turpis, dignissim sed massa vel, auctor tincidunt arcu. Pellentesque orci risus, tempor vel venenatis vitae, sagittis sed enim. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum velit sit amet ante tempor vulputate. Sed metus mi, gravida quis lacinia ac, cursus sit amet purus. Sed sed nunc vel est pellentesque luctus. Nunc blandit enim eu tincidunt faucibus. Phasellus sagittis ipsum nisl.
+
+<p>Nunc fermentum nisl in ipsum dignissim, sed tristique erat porta. Suspendisse maximus nibh ut diam feugiat, vitae venenatis nibh mollis. Nulla eget vehicula metus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris mattis consequat urna. Donec et velit sed metus suscipit suscipit. Ut augue elit, pulvinar a diam vitae, bibendum feugiat massa.
+
+<p>Etiam sed enim vel lectus gravida pellentesque id ac leo. Sed quis lectus lorem. In non interdum dolor. Donec scelerisque felis finibus, luctus urna ac, pellentesque dui. Mauris magna ante, sodales in vehicula et, dapibus nec ipsum. Sed aliquam nisl vitae malesuada feugiat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+<p>Duis eu lacinia nulla, et pulvinar nulla. Morbi malesuada lectus arcu, nec ornare quam egestas ac. Cras risus nunc, volutpat ac sem placerat, porta varius diam. Maecenas euismod ante vitae orci commodo, non euismod nisi cursus. Donec suscipit pretium nisl, eu scelerisque tellus dignissim sit amet. Nam ipsum nisi, auctor at risus non, mollis sodales orci. Sed vitae pharetra eros, et aliquet justo. Fusce vel aliquet tellus, eu pretium enim. Aenean ultrices auctor nibh, ut vehicula diam commodo malesuada.
+
+<p>Phasellus lacinia, lorem ut varius varius, felis sem consectetur nulla, nec maximus quam felis nec odio. Nullam nec molestie elit. Praesent ultricies nibh mollis, varius mi in, consequat magna. Proin aliquet massa nec est interdum, vel ornare urna pharetra. Suspendisse turpis diam, varius id justo sed, suscipit consectetur tellus. Aliquam sed interdum nisl, in facilisis nisi. Integer quis risus quis ipsum tempus auctor. Cras feugiat eu dolor et egestas. Quisque tincidunt diam quis diam elementum ornare. Etiam fermentum blandit nibh a lobortis. Quisque a ligula arcu. Etiam accumsan eros elit, a varius magna tempus sed. Nullam non turpis id tellus ornare pellentesque. In justo metus, tincidunt sit amet odio eget, dapibus aliquet tellus. Sed molestie libero at leo lacinia rutrum.
+
+<p>Donec id luctus urna. Sed feugiat, lectus sit amet dictum lobortis, dolor est viverra nunc, vitae pellentesque ex odio ac nunc. Sed lorem dolor, dignissim interdum nisi non, dictum feugiat odio. Curabitur convallis elit eu elit aliquam, at convallis dolor tincidunt. Nulla diam augue, semper a augue sed, placerat rutrum enim. Aenean condimentum diam hendrerit ante dapibus, maximus vulputate nisi tristique. Fusce pulvinar risus et magna suscipit luctus. Aenean pellentesque nisi diam, sit amet lobortis tortor porta at. Suspendisse vulputate dignissim felis, ultricies posuere quam. Donec erat quam, dapibus ac nunc nec, sodales sollicitudin odio. Donec hendrerit, enim sit amet gravida malesuada, nisl sapien tincidunt enim, id aliquam urna erat sit amet lacus. Quisque mauris diam, pretium ut dictum et, varius mollis nisi. Vestibulum dictum tempus leo in lacinia. Nullam fermentum sed metus et interdum.
+
+<p>Nullam hendrerit dui libero, a molestie enim malesuada nec. Morbi id posuere lacus. Aliquam erat volutpat. Nulla rhoncus, orci et vehicula cursus, nisi velit suscipit nisi, sit amet faucibus arcu erat non velit. Aliquam malesuada lacus ante, ut vulputate neque ultrices eu. Donec arcu mauris, dapibus ac velit eu, viverra iaculis diam. Fusce vitae metus tellus. Praesent vehicula eleifend elit, quis congue nibh. Mauris aliquam nunc et quam congue euismod. Vestibulum rhoncus eget ligula ac tincidunt. Maecenas accumsan non nunc vitae semper. Ut nec vestibulum lectus. Maecenas laoreet dui nec mi blandit rutrum.
+</div>
 {% endblock %}

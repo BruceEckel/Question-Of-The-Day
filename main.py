@@ -1,7 +1,9 @@
 import os
 from flask import Flask, render_template
 from flask_bootstrap import Bootstrap
-dummy = dict(first_question="Dummy first question", second_question="Dummy second question")
+import DailyQuestions
+dummy = dict(first_question=DailyQuestions.QUESTIONS[0][0], 
+		second_question=DailyQuestions.QUESTIONS[0][0])
 
 def create_app():
   app = Flask(__name__)

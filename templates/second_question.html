@@ -11,9 +11,7 @@
 <div class="navbar navbar-default navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
-      <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
       <a class="navbar-brand" href="#">Question of the Day</a>
-      <a href="first_question" class="btn btn-default navbar-btn">First Question</a>
     </div>
   </div>
 
@@ -22,6 +20,12 @@
 
 {% block content %}
 <div class="container">
-  <h3>Are you ready for the first question?</h3> (<i>Press the button above</i>)
+  <h4>{{ questions.second_question }}</h4>
+  (<i>Echo their response as best you can -- don't rephrase.</i>)
+  <h4>Anything else?</h4>
+  (<i>Continue echoing.</i>)
+  <h4>I want to appreciate you for ...</h4>
+  (<i>Make anything up, base on their response or anything else that occurs to you.</i>)<br/>
+  (<i>That's all!</i>)
 </div>
 {% endblock %}

@@ -1,0 +1,38 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}Question of the Day{% endblock %}
+
+{% block styles %}
+{{super()}}
+<style type="text/css">body{padding-top: 50px;}</style>
+{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+      <a class="navbar-brand" href="#">Question of the Day</a>
+      <a href="second_question" class="btn btn-default navbar-btn">Second Question</a>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h4>{{ questions.first_question }}</h4>
+  (<i>Echo their response as best you can -- don't rephrase.</i>)
+  <h4>Anything else?</h4>
+  (<i>Continue echoing.</i>)
+  <h4>When your attention is on that, how do you feel?</h4>
+  (<i>Echo feelings.</i>)
+  <h4>Anything else?</h4>
+  (<i>Continue echoing.</i>)
+  <h4>Now please close your eyes and pay attention to those feelings. Let me know when you're done.</h4>
+  (<i>Wait.</i>)
+  <h4>May I ask you the second question?</h4>
+  (<i>Push the button above.</i>)
+</div>
+{% endblock %}

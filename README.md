@@ -33,7 +33,7 @@ Run Locally
 
 		source venv/bin/activate
 
-	Windows:
+	Windows (you can also just type "go"):
 
         venv\Scripts\activate.bat
 
@@ -70,5 +70,5 @@ Log onto Heroku.com, then follow the instructions to connect to your github repo
 
 Notes
 -------------
-* When you add routes, Flask's automatic refresh doesn't work. You have to kill it and restart it to see the results.
+* When you change **main.py**, Flask's automatic refresh doesn't work. You have to kill it and restart it to see the results. The refresh only seems to work on templates.
 

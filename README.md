@@ -57,3 +57,5 @@ Run on Heroku
 
         heroku open
 
+### Nicer alternative: ###
+Log onto Heroku.com, then follow the instructions to connect to your github repository and launch your app.

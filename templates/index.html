@@ -1,11 +1,10 @@
 {% extends "bootstrap/base.html" %}
-
 {% block title %}Daily Question{% endblock %}
 
 {% block styles %}
 {{super()}}
 <style type="text/css">body{padding-top: 50px;}</style>
-{% endblock %}
+{% endblock styles %}
 
 {% block navbar %}
 <div class="navbar navbar-default navbar-fixed-top">
@@ -16,11 +15,16 @@
       <a href="first_question" class="btn btn-default navbar-btn">First Question</a>
     </div>
   </div>
-
 </div>
-{% endblock %}
+{% endblock navbar %}
+
 
 {% block content %}
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+
 <div class="container">
   <h3>Are you ready for the first question?</h3> (<i>Press the button above</i>)
 </div>

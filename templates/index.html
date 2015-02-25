@@ -18,14 +18,16 @@
 </div>
 {% endblock navbar %}
 
-
-{% block content %}
-<link rel="shortcut icon" href="images/favicon.ico">
+{% block head %}
+{{super()}}
+<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
 <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+{% endblock head %}
 
+{% block content %}
 <div class="container">
   <h3>Are you ready for the first question?</h3> (<i>Press the button above</i>)
 </div>
-{% endblock %}
+{% endblock content %}

@@ -72,4 +72,5 @@ Notes
 -------------
 * When you change **main.py**, Flask's automatic refresh doesn't work. You have to kill it and restart it to see the results. The refresh only seems to work on templates.
 * On Android, open the url https://question-of-the-day.herokuapp.com/ in your browser, then from the browser menu choose "Add to home screen." This will add an icon for the app to your device home screen.
+* On iOS (iPhone, iPad) you must use Safari to get an icon on the home screen. Open https://question-of-the-day.herokuapp.com/ in Safari, then select the box with the arrow coming out of it, then choose "add to home screen."
 

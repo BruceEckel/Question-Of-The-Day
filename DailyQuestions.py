@@ -2,7 +2,7 @@
 import datetime
 
 QUESTIONS = [
-("What Would You Like To Be Forgiven For?", "What Do You Love About Yourself?"), 
+("What Would You Like To Be Forgiven For?", "What Do You Love About Yourself?"),
 ("What Achievement Have You Accomplished That Has Now Lost Its Luster?", "How Has Life Exceeded Your Expectations?"),
 ("Who Or What Are You Blaming?", "Who Has Made A Difference In Your Life?"),
 ("What Do You Say You Don't Have Time For?", "What Have You Been Learning Lately?"),
@@ -23,6 +23,7 @@ QUESTIONS = [
 ("What Do You Have A Hard Time Admitting?", " What Are You Proud Of?"),
 ("What About Your Life Isn’t Going As Planned?", "What Energizes You?"),
 ("What's Bothering You?", " What Are You Grateful For?"),
+("What Triggers You?", " What Are You Grateful For?"),
 ]
 
 def todaysQuestion():
